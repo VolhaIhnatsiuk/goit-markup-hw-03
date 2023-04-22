@@ -61,153 +61,193 @@
       <section class="portfolio">
         <h1 class="visually-hidden">Portfolio</h1>
         <!-- Filters -->
-        <ul class="list">
-          <li>
-            <button class="button portfolio-button" type="button">All</button>
-          </li>
-          <li>
-            <button class="button portfolio-button" type="button">
-              Web Site
-            </button>
-          </li>
-          <li>
-            <button class="button portfolio-button" type="button">App</button>
-          </li>
-          <li>
-            <button class="button portfolio-button" type="button">
-              Design
-            </button>
-          </li>
-          <li>
-            <button class="button portfolio-button" type="button">
-              Marketing
-            </button>
-          </li>
-        </ul>
-        <!-- Projects -->
-        <ul class="list">
-          <li class="project-card">
-            <a class="link" href="">
-              <img
-                src="./images/portfolio-projects/img1.jpg"
-                alt="Application bookmarks"
-                width="360"
-                height="300"
-              />
-              <h2 class="subsection-title link">
-                Banking App Interface Concept
-              </h2>
-              <p class="section-text link">App</p>
-            </a>
-          </li>
-          <li class="project-card">
-            <a class="link" href="">
-              <img
-                src="./images/portfolio-projects/img2.jpg"
-                alt="Mobile phone and terminal"
-                width="360"
-                height="300"
-              />
-              <h2 class="subsection-title link">Cashless Payment</h2>
-              <p class="section-text link">Marketing</p>
-            </a>
-          </li>
-          <li class="project-card">
-            <a class="link" href="">
-              <img
-                src="./images/portfolio-projects/img3.jpg"
-                alt="Mobile phone nad laptop"
-                width="360"
-                height="300"
-              />
-              <h2 class="subsection-title link">Meditation App</h2>
-              <p class="section-text link">App</p>
-            </a>
-          </li>
-          <li class="project-card">
-            <a class="link" href="">
-              <img
-                src="./images/portfolio-projects/img4.jpg"
-                alt="The man behind the wheel"
-                width="360"
-                height="300"
-              />
-              <h2 class="subsection-title link">Taxi Service</h2>
-              <p class="section-text link">Marketing</p>
-            </a>
-          </li>
-          <li class="project-card">
-            <a class="link" href="">
-              <img
-                src="./images/portfolio-projects/img5.jpg"
-                alt="Mobile phone screens"
-                width="360"
-                height="300"
-              />
-              <h2 class="subsection-title link">Screen Illustrations</h2>
-              <p class="section-text link">Design</p>
-            </a>
-          </li>
-          <li class="project-card">
-            <a class="link" href="">
-              <img
-                src="./images/portfolio-projects/img6.jpg"
-                alt="The girl smiles and looks at the phone"
-                width="360"
-                height="300"
-              />
-              <h2 class="subsection-title link">Online Courses</h2>
-              <p class="section-text link">Marketing</p>
-            </a>
-          </li>
-          <li class="project-card">
-            <a class="link" href="">
-              <img
-                src="./images/portfolio-projects/img7.jpg"
-                alt="Girl's Instagram profile"
-                width="360"
-                height="300"
-              />
-              <h2 class="subsection-title link">Instagram Stories Concept</h2>
-              <p class="section-text link">Design</p>
-            </a>
-          </li>
-          <li class="project-card">
-            <a class="link" href="">
-              <img
-                src="./images/portfolio-projects/img8.jpg"
-                alt="A girl carries a net of groceries"
-                width="360"
-                height="300"
-              />
-              <h2 class="subsection-title link">Organic Food</h2>
-              <p class="section-text link">Web Site</p>
-            </a>
-          </li>
-          <li class="project-card">
-            <a class="link" href="">
-              <img
-                src="./images/portfolio-projects/img9.jpg"
-                alt="The barista makes a foam pattern on the cappuccino"
-                width="360"
-                height="300"
-              />
-              <h2 class="subsection-title link">Fresh Coffee</h2>
-              <p class="section-text link">Web Site</p>
-            </a>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="filters-container list">
+            <li class="item">
+              <button class="button portfolio-button btn-all" type="button">
+                All
+              </button>
+            </li>
+            <li class="item">
+              <button class="button portfolio-button btn-website" type="button">
+                Web Site
+              </button>
+            </li>
+            <li class="item">
+              <button class="button portfolio-button btn-app" type="button">
+                App
+              </button>
+            </li>
+            <li class="item">
+              <button class="button portfolio-button btn-design" type="button">
+                Design
+              </button>
+            </li>
+            <li class="item">
+              <button
+                class="button portfolio-button btn-marketing"
+                type="button"
+              >
+                Marketing
+              </button>
+            </li>
+          </ul>
+          <!-- Projects -->
+          <ul class="projects-container list">
+            <li class="item project-card">
+              <a class="link" href="">
+                <img
+                  class="card-indent"
+                  src="./images/portfolio-projects/img1.jpg"
+                  alt="Application bookmarks"
+                  width="360"
+                  height="300"
+                />
+                <div class="indent-left">
+                  <h2 class="subsection-title link">
+                    Banking App Interface Concept
+                  </h2>
+                  <p class="card-indent section-text link">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="item project-card">
+              <a class="link" href="">
+                <img
+                  class="card-indent"
+                  src="./images/portfolio-projects/img2.jpg"
+                  alt="Mobile phone and terminal"
+                  width="360"
+                  height="300"
+                />
+                <div class="indent-left">
+                  <h2 class="subsection-title link">Cashless Payment</h2>
+                  <p class="card-indent section-text link">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="item project-card">
+              <a class="link" href="">
+                <img
+                  class="card-indent"
+                  src="./images/portfolio-projects/img3.jpg"
+                  alt="Mobile phone nad laptop"
+                  width="360"
+                  height="300"
+                />
+                <div class="indent-left">
+                  <h2 class="subsection-title link">Meditation App</h2>
+                  <p class="card-indent section-text link">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="item project-card">
+              <a class="link" href="">
+                <img
+                  class="card-indent"
+                  src="./images/portfolio-projects/img4.jpg"
+                  alt="The man behind the wheel"
+                  width="360"
+                  height="300"
+                />
+                <div class="indent-left">
+                  <h2 class="subsection-title link">Taxi Service</h2>
+                  <p class="card-indent section-text link">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="item project-card">
+              <a class="link" href="">
+                <img
+                  class="card-indent"
+                  src="./images/portfolio-projects/img5.jpg"
+                  alt="Mobile phone screens"
+                  width="360"
+                  height="300"
+                />
+                <div class="indent-left">
+                  <h2 class="subsection-title link">Screen Illustrations</h2>
+                  <p class="card-indent section-text link">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="item project-card">
+              <a class="link" href="">
+                <img
+                  class="card-indent"
+                  src="./images/portfolio-projects/img6.jpg"
+                  alt="The girl smiles and looks at the phone"
+                  width="360"
+                  height="300"
+                />
+                <div class="indent-left">
+                  <h2 class="subsection-title link">Online Courses</h2>
+                  <p class="card-indent section-text link">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="item project-card">
+              <a class="link" href="">
+                <img
+                  class="card-indent"
+                  src="./images/portfolio-projects/img7.jpg"
+                  alt="Girl's Instagram profile"
+                  width="360"
+                  height="300"
+                />
+                <div class="indent-left">
+                  <h2 class="subsection-title link">
+                    Instagram Stories Concept
+                  </h2>
+                  <p class="card-indent section-text link">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="item project-card">
+              <a class="link" href="">
+                <img
+                  class="card-indent"
+                  src="./images/portfolio-projects/img8.jpg"
+                  alt="A girl carries a net of groceries"
+                  width="360"
+                  height="300"
+                />
+                <div class="indent-left">
+                  <h2 class="subsection-title link">Organic Food</h2>
+                  <p class="card-indent section-text link">Web Site</p>
+                </div>
+              </a>
+            </li>
+            <li class="item project-card">
+              <a class="link" href="">
+                <img
+                  class="card-indent"
+                  src="./images/portfolio-projects/img9.jpg"
+                  alt="The barista makes a foam pattern on the cappuccino"
+                  width="360"
+                  height="300"
+                />
+                <div class="indent-left">
+                  <h2 class="subsection-title link">Fresh Coffee</h2>
+                  <p class="card-indent section-text link">Web Site</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Footer -->
     <footer class="footer">
-      <a class="logo link" href="./index.html"
-        >Web<span class="footer-logo">Studio</span></a
-      >
-      <p class="section-text footer-text">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
+      <div class="container">
+        <a class="footer-logo logo link" href="./index.html"
+          >Web<span class="footer-logo-span">Studio</span></a
+        >
+        <p class="footer-container section-text footer-text">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+      </div>
     </footer>
   </body>
 </html>

@@ -14,6 +14,11 @@
   --color-green: #31d0aa;
   --color-light-slate: #8e8f99;
   --color-dairy: #fcfcfc;
+
+  /* Others */
+  --indent: 24px;
+  --items: 3;
+  --items-team: 4;
 }
 
 /**
@@ -89,6 +94,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
+
+.card-indent {
+  margin-bottom: 32px;
 }
 
 /**
@@ -295,6 +304,12 @@ img {
 
 .work-container {
   display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+.work-container .item {
+  flex-basis: calc((100% - var(--indent) * var(--items) - 1) / var(--items));
 }
 
 .work-title {
@@ -306,9 +321,18 @@ img {
   | Team section
   |============================
 */
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+.team-container .item {
+  flex-basis: calc((100% - var(--indent) * (var(--items-team)) - 1) / 4);
+}
 
 .team {
-  padding-top: 120px;
+  padding: 120px 0;
 
   background-color: var(--color-cloud);
 }
@@ -318,6 +342,8 @@ img {
 }
 
 .team-card {
+  border-radius: 0px 0px 4px 4px;
+
   background: var(--color-white);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -332,14 +358,24 @@ img {
   | Footer
   |============================
 */
+.footer-container {
+  width: 264px;
+}
 
 .footer {
+  padding: 100px 0;
+
   background-color: var(--secondary-text-color);
 }
 
-.footer-logo,
+.footer-logo-span,
 .footer-text {
   color: var(--color-cloud);
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 16px;
 }
 
 /**
@@ -347,11 +383,45 @@ img {
   | Portfolio filters
   |============================
 */
+.filters-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 96px;
+  padding-bottom: 72px;
+}
+
+.filters-container .item:not(:last-child) {
+  margin-right: 24px;
+}
 
 .portfolio-button {
+  border-radius: 4px;
+  min-height: 48px;
+
   color: var(--logo-btn-color);
   background-color: var(--color-cloud);
   border: 1px solid var(--border-color);
+}
+
+.btn-all {
+  min-width: 69px;
+}
+
+.btn-website {
+  min-width: 116px;
+}
+
+.btn-app {
+  min-width: 78px;
+}
+
+.btn-design {
+  min-width: 101px;
+}
+
+.btn-marketing {
+  min-width: 126px;
 }
 
 .portfolio-button:hover,
@@ -367,7 +437,23 @@ img {
   | Portfolio. Projects
   |============================
 */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px var(--indent);
+  padding-bottom: 120px;
+}
+
+.projects-container .item {
+  flex-basis: calc((100% - var(--indent) * (var(--items)) - 1) / 3);
+}
 
 .project-card {
+  border-bottom: 1px solid var(--border-color);
+
   background: var(--color-white);
+}
+
+.indent-left {
+  padding-left: 16px;
 }
